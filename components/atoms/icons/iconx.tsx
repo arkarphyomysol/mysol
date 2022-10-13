@@ -12,7 +12,7 @@ const Iconx: FC<IconxProps> = ({ icon, className }) => {
   const TheIcon = icons[icon];
   return (
     <TheIcon
-      className={`${className ? `${className}` : ""} w-7 h-7 shrink-0`}
+      className={`${className ? `${className}` : "w-7 h-7 shrink-0"} shrink-0`}
       aria-hidden="true"
     />
   );
