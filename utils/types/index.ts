@@ -21,3 +21,19 @@ export interface navigationProps {
   }[];
 }
 [];
+export interface ServiceSchemaProps {
+  header: string;
+  subHeader: string;
+  path: string;
+  items: {
+    title: string;
+    subTitle: string;
+    path: string;
+    icon?: JSX.Element;
+    children?: {
+      title: string;
+      path: string;
+    }[];
+  }[];
+}
+[];

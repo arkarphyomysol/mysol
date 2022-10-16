@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { LayoutProps } from "../../../utils/types";
+import Footer from "../footer";
 import { Navigation } from "../navigation";
 
 const Layout: NextPage<LayoutProps> = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout: NextPage<LayoutProps> = ({ children }) => {
     <div className="">
       <Navigation />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
