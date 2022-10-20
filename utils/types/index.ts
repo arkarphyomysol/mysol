@@ -6,7 +6,10 @@ export interface LayoutProps {
   children: JSX.Element | JSX.Element[];
 }
 
-export interface HeroProps {}
+export interface CHeroProps {
+  title: string;
+  subTitle: string;
+}
 
 export interface navigationProps {
   header: string;
@@ -22,18 +25,37 @@ export interface navigationProps {
 }
 [];
 export interface ServiceSchemaProps {
-  header: string;
-  subHeader: string;
+  header?: string;
+  subHeader?: string;
   path: string;
+  sc_header?: string;
+  sc_subHeader?: string;
   items: {
-    title: string;
-    subTitle: string;
-    path: string;
+    title?: string;
+    subTitle?: string;
+    path?: string;
     icon?: JSX.Element;
+    isFeature?: boolean;
+    sc_image?: JSX.Element;
+    sc_text?: string;
     children?: {
-      title: string;
-      path: string;
+      title?: string;
+      path?: string;
     }[];
   }[];
+  serviceCosts: {
+    header?: string;
+    subHeader?: string;
+    items: {
+      title?: string;
+      subTitle?: string;
+      icon?: JSX.Element;
+    }[];
+  };
+  CTA: {
+    header?: string;
+    subHeader?: string;
+    btnText?: string;
+  };
 }
 [];
