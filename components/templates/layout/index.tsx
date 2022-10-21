@@ -6,7 +6,7 @@ import { Navigation } from "../navigation";
 const Layout: NextPage<LayoutProps> = ({ children }) => {
   return (
     <div className="">
-      <Navigation />
+      {/* <Navigation /> */}
       <main>{children}</main>
       <Footer />
     </div>

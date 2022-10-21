@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Hero: NextPage<HeroProps> = () => {
   return (
-    <div className=" relative w-full h-screen">
+    <div className="relative w-full h-screen ">
       <div className="absolute top-0 left-0 w-full h-screen -z-10 ">
         <Image src={HeroImage} objectFit="cover" layout="fill" alt={`Mysol`} />
       </div>
 
-      <div className=" bg-CoolBlack/70 h-screen flex flex-col">
+      <div className="flex flex-col h-screen  bg-CoolBlack/70">
         <div className="px-4 pb-16 mx-auto my-auto capitalize max-w-9xl sm:px-6 text-slate-100 font-DMSans">
           <h4 className="text-2xl font-medium font-DMSans ">
             One-Stop Solution For All Your Business Needs
