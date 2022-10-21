@@ -10,6 +10,7 @@ export interface CHeroProps {
   title: string;
   subTitle: string;
 }
+export interface HeroProps {}
 
 export interface navigationProps {
   header: string;
