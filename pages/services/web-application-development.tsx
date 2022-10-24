@@ -7,10 +7,11 @@ import { WebAppSchema } from "../../utils/config/schemas/webAppSchema";
 import CallToAction from "../../components/templates/callToAction";
 import { ServicesSchema } from "../../utils/config/schemas/servicesSchema";
 import Testimonial from "../../components/templates/testimonial";
+import Layout from "../../components/templates/layout";
 
 const WebApplicationDevelopment: NextPage = () => {
   return (
-    <div className="">
+    <Layout>
       <CHero
         title={WebAppSchema.hero.header}
         subTitle={WebAppSchema.hero.subHeader}
@@ -26,7 +27,7 @@ const WebApplicationDevelopment: NextPage = () => {
         </button>
       </CallToAction>
       <Testimonial />
-    </div>
+    </Layout>
   );
 };
 export default WebApplicationDevelopment;

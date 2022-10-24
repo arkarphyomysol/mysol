@@ -4,10 +4,12 @@ import CHero from "../../components/templates/childHero";
 import ServiceCosts from "../../components/templates/services/serviceCosts";
 import CallToAction from "../../components/templates/callToAction";
 import { ServicesSchema } from "../../utils/config/schemas/servicesSchema";
+import Testimonial from "../../components/templates/testimonial";
+import Layout from "../../components/templates/layout";
 
 const Services: NextPage = () => {
   return (
-    <div className="">
+    <Layout>
       <CHero
         title={"CUSTOM SOFTWARE DEVELOPMENT SERVICES"}
         subTitle={
@@ -24,7 +26,8 @@ const Services: NextPage = () => {
           {ServicesSchema.CTA.btnText}
         </button>
       </CallToAction>
-    </div>
+      <Testimonial />
+    </Layout>
   );
 };
 export default Services;

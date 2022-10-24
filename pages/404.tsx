@@ -1,32 +1,41 @@
 import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Iconx from "../components/atoms/icons/iconx";
 
 const Custom404: NextPage = () => {
   return (
-    <div className="flex flex-col-reverse items-center justify-center gap-16 px-4 py-24 lg:px-24 lg:py-24 md:py-20 md:px-44 lg:flex-row md:gap-28">
-      <div className="relative w-full pb-12 xl:pt-24 xl:w-1/2 lg:pb-0">
-        <div className="relative">
-          <div className="absolute">
-            <div className="">
-              <h1 className="my-2 text-2xl font-bold text-gray-800">
-                {`Looks like you've found the doorway to the great nothing`}
-              </h1>
-              <p className="my-2 text-gray-800">
-                {`Sorry about that! Please visit our hompage to get where you need to go.`}
-              </p>
-              <button className="px-8 py-4 my-2 text-center text-white bg-indigo-600 border rounded sm:w-full lg:w-auto md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
-                Take me there!
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+    <main className="flex items-center justify-center h-screen bg-gray-100 dark:bg-dark dark:text-light">
+      <div className="p-4 space-y-4">
+        <div className="flex flex-col items-start space-y-3 sm:flex-row sm:space-y-0 sm:items-center sm:space-x-3">
+          <p className="font-semibold text-red-500 text-9xl dark:text-red-600">
+            404
+          </p>
+          <div className="space-y-2">
+            <h1 className="flex items-center space-x-2">
+              <Iconx
+                icon="ExclamationTriangleIcon"
+                className="w-6 h-6 text-red-500 dark:text-red-600"
+              />
+              <span className="text-xl font-medium text-gray-600 sm:text-2xl dark:text-light">
+                Oops! Page not found.
+              </span>
+            </h1>
+            <p className="text-base font-normal text-gray-600 dark:text-gray-300">
+              The page you ara looking for was not found.
+            </p>
+            <p className="space-x-2 text-base font-normal text-gray-600 dark:text-gray-300">
+              <span>You may return to</span>
+              <Link href={"/"}>
+                <a className="text-blue-600 hover:underline dark:text-blue-500">
+                  home page
+                </a>
+              </Link>
+            </p>
           </div>
         </div>
       </div>
-      <div>
-        <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
-      </div>
-    </div>
+    </main>
   );
 };
 export default Custom404;
