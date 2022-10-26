@@ -11,7 +11,7 @@ import QuickAction from "../../molecules/quickAction";
 
 export const Navigation: NextPage = () => {
   return (
-    <div className=" absolute w-full z-10">
+    <div className="absolute z-10 w-full ">
       <div className="hidden py-1 bg-gray-700 bg-opacity-70 lg:block">
         <div className="flex items-center justify-between px-4 mx-auto sm:px-6 max-w-9xl">
           <Locals />
@@ -59,11 +59,22 @@ export const Navigation: NextPage = () => {
               </div>
               <Popover.Group as="nav" className="hidden space-x-10 lg:flex">
                 {navigationConfig.items.map((menu, i) => (
-                  <Link href={menu.path} key={i}>
-                    <a className="font-light text-slate-200 hover:text-opacity-60 btnHover">
-                      {menu.title}
-                    </a>
-                  </Link>
+                  <>
+                    <div className=" peer" key={i}>
+                      <Link href={menu.path}>
+                        <a className="font-light text-slate-200 hover:text-opacity-60 btnHover">
+                          {menu.title}
+                        </a>
+                      </Link>
+                    </div>
+                    <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg">
+                      <Link href={menu.path}>
+                        <a className="font-light text-slate-200 hover:text-opacity-60 btnHover">
+                          {menu.title}
+                        </a>
+                      </Link>
+                    </div>
+                  </>
                 ))}
               </Popover.Group>
             </div>

@@ -1,24 +1,24 @@
 import { NextPage } from "next";
-import ServiceShowcases from "../../components/templates/services/serviceShowcases";
 import CHero from "../../components/templates/childHero";
-import ServiceCosts from "../../components/templates/services/serviceCosts";
+import { BusinessType } from "../../components/templates/services/webAppDev/businessType";
+import WebDevTimeline from "../../components/templates/services/webAppDev/timeline";
+import { WebAppTypes } from "../../components/templates/services/webAppDev/webAppTypes";
+import { WebAppSchema } from "../../utils/config/schemas/webAppSchema";
 import CallToAction from "../../components/templates/callToAction";
 import { ServicesSchema } from "../../utils/config/schemas/servicesSchema";
 import Testimonial from "../../components/templates/testimonial";
 import Layout from "../../components/templates/layout";
 
-const Services: NextPage = () => {
+const WebApplicationDevelopment: NextPage = () => {
   return (
     <Layout>
       <CHero
-        title={"CUSTOM SOFTWARE DEVELOPMENT SERVICES"}
-        subTitle={
-          "Web applications, mobile apps, integration projects and more. 110 + projects | Since 2005"
-        }
+        title={WebAppSchema.hero.header}
+        subTitle={WebAppSchema.hero.subHeader}
       />
-      {/* CONTENTS */}
-      <ServiceShowcases />
-      <ServiceCosts />
+      <BusinessType />
+      <WebAppTypes />
+      <WebDevTimeline />
       <CallToAction
         title={ServicesSchema.CTA.header}
         subTitle={ServicesSchema.CTA.header}>
@@ -30,4 +30,4 @@ const Services: NextPage = () => {
     </Layout>
   );
 };
-export default Services;
+export default WebApplicationDevelopment;
