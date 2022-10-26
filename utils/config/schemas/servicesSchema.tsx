@@ -25,7 +25,7 @@ export const ServicesSchema: ServiceSchemaProps = {
       title: "Web Application Development",
       subTitle:
         " Utilising the latest technologies, we build web applications that deliver remarkable functionality and user engagement from within a browser window.",
-      path: "/web-development",
+      path: "/services/web-application-development",
       icon: ICONS.browser,
       isFeature: true,
       sc_image: IMAGES.web_dev,
@@ -36,7 +36,7 @@ export const ServicesSchema: ServiceSchemaProps = {
       title: "Mobile App Development",
       subTitle:
         "Stunning mobile apps that work across a variety of devices and engage large audiences – designed with security, scalability, and usability in mind.",
-      path: "/app-development",
+      path: "/services/mobile-app-development",
       icon: ICONS.mobile,
       isFeature: true,
       sc_image: IMAGES.app_dev,
@@ -47,7 +47,7 @@ export const ServicesSchema: ServiceSchemaProps = {
       title: "Dedicated Development Team",
       subTitle:
         "Scale your delivery capacity with a wide range of technology skills - leverage GoodCore’s experience in hiring, motivating and managing top tech professionals.",
-      path: "/server-maintainance",
+      path: "/services/dedicated-development-team",
       icon: ICONS.users,
       isFeature: true,
       sc_image: IMAGES.web_dev,
@@ -58,7 +58,7 @@ export const ServicesSchema: ServiceSchemaProps = {
       title: "Service and Maintenance",
       subTitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eveniet incidunt nulla illum sit reprehenderit ad neque at voluptatibus, non veritatis.",
-      path: "/server-maintainance",
+      path: "/services/service-and-maintenance",
       icon: ICONS.users,
       isFeature: false,
       sc_image: IMAGES.web_dev,

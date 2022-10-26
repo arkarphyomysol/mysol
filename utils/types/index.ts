@@ -7,8 +7,8 @@ export interface LayoutProps {
 }
 
 export interface CHeroProps {
-  title: string;
-  subTitle: string;
+  title: string | undefined;
+  subTitle: string | undefined;
 }
 export interface HeroProps {}
 
@@ -60,3 +60,48 @@ export interface ServiceSchemaProps {
   };
 }
 [];
+
+export interface WebAppSchemaProps {
+  hero: {
+    header?: string;
+    subHeader?: string;
+  };
+  businessTypes: {
+    header?: string;
+    items: {
+      icon?: JSX.Element;
+      title?: string;
+      body?: string;
+    }[];
+  };
+  webAppTypes: {
+    header?: string;
+    subHeader?: string;
+    items: {
+      title?: string;
+      body: {
+        text?: string;
+      }[];
+      image?: JSX.Element;
+    }[];
+  };
+  timeline: {
+    header?: string;
+    subHeader?: string;
+    items: {
+      title?: string;
+      text?: string;
+    }[];
+  };
+}
+
+export interface testimonialSchemaProps {
+  header?: string;
+  subHeader?: string;
+  items: {
+    name?: string;
+    positionAt?: string;
+    text?: string;
+    profileImage?: JSX.Element | string;
+  }[];
+}
