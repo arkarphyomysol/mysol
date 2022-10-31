@@ -105,3 +105,43 @@ export interface testimonialSchemaProps {
     profileImage?: JSX.Element | string;
   }[];
 }
+
+export interface AboutMysolSchemaProps {
+  hero: {
+    header?: string;
+    subHeader?: string;
+  };
+  appendex: {
+    title: {
+      text?: string;
+    }[];
+    text?: string;
+    image?: string;
+  };
+  background: {
+    title: {
+      text?: string;
+    }[];
+    text?: string;
+  };
+  mySol: {
+    title: {
+      text?: string;
+    }[];
+    text?: string;
+  };
+  MVO: {
+    title?: string;
+    text?: string;
+  }[];
+  Teams: {
+    title?: string;
+    items: {
+      name?: string;
+      position?: string;
+      // profileImage?: string;
+      profileImage?: JSX.Element;
+      slogan?: string;
+    }[];
+  };
+}

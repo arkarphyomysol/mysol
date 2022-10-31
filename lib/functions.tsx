@@ -20,3 +20,19 @@ export const getImage = (name: string, width: number, height: number) => (
     height={height}
   />
 );
+export const getTeamImage = (
+  name: string,
+  width: number,
+  height: number,
+  ext?: string
+) => (
+  <div className="w-20">
+    <Image
+      src={`/images/team/${name}.${ext ? ext : "png"}`}
+      alt={name}
+      width={width}
+      height={height}
+      className="rounded-full "
+    />
+  </div>
+);

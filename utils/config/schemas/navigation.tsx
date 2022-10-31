@@ -10,34 +10,14 @@ export const navigationConfig: navigationProps = {
     {
       title: "Services",
       path: "/services",
-      children: [
-        {
-          title: "Web Development",
-          path: "/resources/web-development",
-        },
-        {
-          title: "Mobile Development",
-          path: "/resources/mobile-development",
-        },
-      ],
     },
     {
-      title: "Activities",
-      path: "/activities",
+      title: "About",
+      path: "/about",
     },
     {
-      title: "Resources",
-      path: "/resources",
-      children: [
-        {
-          title: "Blog",
-          path: "/resources/blog",
-        },
-        {
-          title: "CSR",
-          path: "/resources/csr",
-        },
-      ],
+      title: "Contact",
+      path: "/contact",
     },
   ],
 };

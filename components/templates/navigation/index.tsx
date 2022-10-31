@@ -59,22 +59,22 @@ export const Navigation: NextPage = () => {
               </div>
               <Popover.Group as="nav" className="hidden space-x-10 lg:flex">
                 {navigationConfig.items.map((menu, i) => (
-                  <>
-                    <div className=" peer" key={i}>
+                  <div className="" key={i}>
+                    <div className="">
                       <Link href={menu.path}>
                         <a className="font-light text-slate-200 hover:text-opacity-60 btnHover">
                           {menu.title}
                         </a>
                       </Link>
                     </div>
-                    <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg">
+                    <div className="hidden  hover:flex w-[200px] flex-col bg-white drop-shadow-lg">
                       <Link href={menu.path}>
                         <a className="font-light text-slate-200 hover:text-opacity-60 btnHover">
                           {menu.title}
                         </a>
                       </Link>
                     </div>
-                  </>
+                  </div>
                 ))}
               </Popover.Group>
             </div>
