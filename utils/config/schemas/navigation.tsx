@@ -16,6 +16,10 @@ export const navigationConfig: navigationProps = {
       path: "/about",
     },
     {
+      title: "Careers",
+      path:"/career",
+    },
+    {
       title: "Contact",
       path: "/contact",
     },

@@ -7,6 +7,7 @@ import CHero from "../../components/templates/childHero";
 import Layout from "../../components/templates/layout";
 import Testimonial from "../../components/templates/testimonial";
 import { AboutMysolSchema } from "../../utils/config/schemas/aboutMysolSchema";
+import { CareerSchema } from "../../utils/config/schemas/careerSchema";
 import { ServicesSchema } from "../../utils/config/schemas/servicesSchema";
 
 const About: NextPage = () => {

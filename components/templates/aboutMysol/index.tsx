@@ -39,7 +39,7 @@ const TpAboutMysol: NextPage = () => {
               clients. This is what helps our software development company grow.
             </p>
             <div className="inline-flex w-full mx-auto md:w-fit md:pt-8">
-              <Link href={`/about-mysol`}>
+              <Link href={`/about`}>
                 <a className="px-4 py-2 mx-auto transition duration-500 ease-in-out border rounded-full border-CoolBlack hover:bg-CoolBlack hover:text-slate-300">
                   More About Mysol
                 </a>

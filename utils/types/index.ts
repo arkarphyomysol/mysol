@@ -2,6 +2,8 @@
  * LAYOUTS
  */
 
+import { StringOptions } from "sass";
+
 export interface LayoutProps {
   children: JSX.Element | JSX.Element[];
 }
@@ -11,6 +13,11 @@ export interface CHeroProps {
   subTitle: string | undefined;
 }
 export interface HeroProps {}
+
+export interface CDetailProps {
+  title: string | undefined;
+  subTitle: string | undefined;
+}
 
 export interface navigationProps {
   header: string;
@@ -61,6 +68,31 @@ export interface ServiceSchemaProps {
 }
 [];
 
+export interface ContactSchemaProps {
+  header?: string;
+  subHeader?: string;
+  path: string;
+  sc_header?: string;
+  sc_subHeader?: string;
+  sc_content?:string;
+  title?:string;
+  title_content?:string;
+  list1?:string;
+  list2?:string;
+  list3?:string;
+  list4?:string;
+  list5?:string;
+  btn_content?: string;
+  items: {
+    title?: string;
+    content1?: string;
+    content2?: string;
+    content3?: string;
+    phone?: string;
+  }[];
+}
+[];
+
 export interface WebAppSchemaProps {
   hero: {
     header?: string;
@@ -105,6 +137,26 @@ export interface testimonialSchemaProps {
     profileImage?: JSX.Element | string;
   }[];
 }
+
+export interface CareerSchemaProps{
+  JobOpportunities: {
+    title?: string;
+    items: {
+      role?: string;
+      salary?: string;
+      type ?: string;
+      location?: string;
+      detailsUrl?: string;
+      applyUrl?: string;
+      jobDescription?:{
+        text1?: string;
+        text2?: string;
+        text3?: string;
+        text4?: string;
+      }[];
+    }[];
+  };
+};
 
 export interface AboutMysolSchemaProps {
   hero: {

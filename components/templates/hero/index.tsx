@@ -20,7 +20,7 @@ const Hero: NextPage<HeroProps> = () => {
             Creating <span className="font-bold text-ruby">Softwares </span>
             &#38; Digital Excellence
           </h1>
-          <Link href={`#`}>
+          <Link href={`/contact`}>
             <a>
               <div className="px-5 py-2 mt-8 text-xl font-medium transition duration-700 ease-in-out bg-yellow-400 rounded-full hover:bg-ruby hover:text-slate-800 lg:px-10 lg:py-6 text-slate-700 w-fit">
                 Get In Touch

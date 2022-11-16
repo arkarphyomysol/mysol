@@ -20,7 +20,7 @@ const CHero: NextPage<CHeroProps> = ({ title, subTitle }) => {
         <div className="flex h-full px-4 backdrop-blur-sm text-slate-300">
           <div className="m-auto">
             <div className="flex flex-col items-center">
-              <h1 className="text-3xl md:text-6xl">{title}</h1>
+              <h1 className="text-3xl md:text-6xl text-ruby">{title}</h1>
               <p className="my-8 text-sm font-light leading-loose md:leading-10 md:text-2xl">
                 {subTitle}
               </p>
